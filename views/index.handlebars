@@ -1,0 +1,64 @@
+<!--Passed variables: goodEvilCook, fFoodCook, fColor, insanity-->
+<nav class="navbar navbar-inverse bg-primary">
+  <form action="/formPost" method="post" class="input-group" id="goodEvilForm">
+    <span class="input-group-addon">
+  <input type="radio" name="goodEvil" value="good" checked> Good
+  <input type="radio" name="goodEvil" value="evil"> Evil         ---{{goodEvilCook}}----<br>
+  Favorite Food:
+  <input type="text" name="favoriteFood" placeholder="Favorite Food" value="{{fFoodCook}}">
+  <label for="fColor">Favorite color: {{fColor}}</label>
+  <select name="fColor" value="{{fColor}}">
+    <option value="white">White</option>
+    <option value="red">Red</option>
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+    <option value="black">Black</option>
+  </select>
+  <br>
+  <span>Insanity Level 1---5
+  <input type="range" name="insanity" min="1" max="5" value="{{insanity}}" step="1">
+  </span>
+    </span>
+
+  <button class="btn btn-primary" type="submit" value="Submit">Submit Changes</button>
+
+</form>
+</nav>
+<div class="{{fColor}} insanity{{insanity}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <h1>Css Garden of good and evil</h1>
+        <h2 class="{{goodEvilCook}}Good"> Likes</h2>
+        <h2 class="{{goodEvilCook}}Evil"> Really really Likeeee</h2>
+        <ol>
+          <li> {{fFoodCook}} </li>
+          <li class="{{goodEvilCook}}Good"> Kites </li>
+          <li class="{{goodEvilCook}}Evil"> WAR!!</li>
+        </ol>
+
+        <h2> Dislikes</h2>
+        <ol>
+          <li class="{{goodEvilCook}}Good"> Violence </li>
+          <li class="{{goodEvilCook}}Good"> War </li>
+          <li class="{{goodEvilCook}}Evil"> Puppies </li>
+          <li class="{{goodEvilCook}}Evil"> Smiles </li>
+        </ol>
+
+        <h2> Biography</h2>
+        <p class="{{goodEvilCook}}Good"> When I was little, I had a puppy.  He was my best friend.  I went to a regular school, did alright. Then I got into stamp collection and things went crazy.</p>
+        <p class="{{goodEvilCook}}Evil"> When I was little, I found a puppy. He tasted delicious. I used to go to school, but, ha ha, they didn't want me back. Also, it should be mentioned, I like to collect gum. Used, wet gum.</p>
+
+        <h2> Resume</h2>
+        <ol>
+          <li class="{{goodEvilCook}}Good"> Mortician </li>
+          <li class="{{goodEvilCook}}Good"> Grocery Store Clerk </li>
+          <li class="{{goodEvilCook}}Evil"> Stalker </li>
+          <li class="{{goodEvilCook}}Evil"> Stalker (better) </li>
+          <li class="{{goodEvilCook}}Evil"> Stealing, etc, etc. </li>
+          <li> Currently: A website writer </li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </div>

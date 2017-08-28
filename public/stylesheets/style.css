@@ -1,0 +1,65 @@
+.black {
+  background-color:#111111;
+  color:#DDDDDD;
+}
+
+.white {
+  background-color:white
+}
+
+.red {
+  background-color: red;
+  color: lightGreen;
+}
+
+.yellow {
+  background-color: yellow;
+  color: purple;
+}
+
+.blue {
+  background-color:blue;
+  color:orange;
+}
+
+.insanity1 {
+  font-family: "Helvetica", "sans-serif";
+}
+
+.insanity2 {
+  font-family: "Times New Roman";
+  letter-spacing: 10px;
+}
+
+.insanity3 {
+  font-family: "fantasy";
+  letter-spacing: 15px;
+}
+
+.insanity4 {
+  font-family: "Impact";
+  letter-spacing: -3px;
+
+}
+
+.insanity5 {
+  font-family: "Comic Sans MS";
+  transform: rotate(-180deg);
+
+}
+
+.goodEvil {
+  display:none;
+}
+
+.evilEvil {
+  display:default;
+}
+
+.goodGood {
+  display: default:
+}
+
+.evilGood {
+  display: none;
+}
